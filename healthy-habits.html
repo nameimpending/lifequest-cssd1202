@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Habits Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>LifeQuest</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="productivity-arena.html">Productivity</a> |
+            <a href="money-manager.html">Money</a> |
+            <a href="habits-tracker.html">Habits</a> |
+            <a href="achievements.html">Achievements</a> |
+            <a href="extras.html">Extras</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact Us</a> |
+        </nav>
+        <br>
+        <p>This page is about tracking your habits, preventing harmful ones, and forming helpful ones!</p> <hr>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Daily</h2>
+            <form>
+                <h3>Log Today's Habits</h3>
+                <br>
+                <div>
+                    <label for="water">Water (glasses):</label>
+                    <input type="number" id="water" name="wat" min="0" max="20" value="0">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="sleep">Sleep (hours):</label>
+                    <input type="number" id="sleep" name="slep" min="0" max="24" step="0.5" value="0">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="exercise">Exercise (minutes):</label>
+                    <input type="number" id="exercise" name="Phys" min="0" max="300" value="0">
+                    <br><br>
+                </div>
+                <button id="water" name="wat"  id="sleep" name="slep"  id="exercise" name="Phys">
+                    Log Habits
+                </button>
+            </form>
+        </section><br>
+        <hr>
+        <section>
+            <h2>Current Streaks</h2>
+            
+            <p>This section is to show your progress and how many days you have managed to keep up your commitment</p>
+            <ol><br>
+                <li>Water Gaol: [# days]</li><br>
+                <li>Sleep Goal: [# days]</li><br>
+                <li>Exercise Goal: [# days]</li><br>
+            </ol>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>LifeQuest 2026</p>
+    </footer>
+</body>
+</html>
