@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Productivity Arena | LifeQuest</title>
+    </head>
+    <body>
+        <header>
+            <h1>Productivity Arena</h1>
+            <nav>
+                <a href="index.html">Home</a> |
+                <a href="productivity-arena.html">Productivity</a> |
+                <a href="money-manager.html">Money</a> |
+                <a href="habits-tracker.html">Habits</a> |
+                <a href="achievements.html">Achievements</a> |
+                <a href="extras.html">Extras</a> |
+                <a href="about.html">About</a> |
+                <a href="contact.html">Contact Us</a> |
+                <hr>
+            </nav>
+            
+        </header>
+
+        <main>
+            <section>
+                <h2>Welcome to the Productivity Arena!</h2>
+                <p>Track your productivity and achieve your goals here!</p>
+            </section>
+
+            <section>
+                <h3>Productivity Tools:</h3>
+                <ul>
+                    <li><b>Task Manager:</b> Create, edit, and track your daily tasks.</li>
+                    <li><b>Pomodoro Timer:</b> Use the Pomodoro technique to boost focus and productivity.</li>
+                    <li><b>Progress Tracker:</b> Visualize your productivity trends over time.</li>
+                </ul>
+            </section>
+
+             <section>
+                <h3>Stay Motiviated!</h3>
+                <p>Keep your productivity high by setting achievable goals and tracking your progress!</p>
+                <p>Every time you complete a task or focus on your goals, you earn points that help you level up.<br> Staying productive multiple days in a row builds streaks, showing your consistency and dedication.</p>
+            </section>
+
+            <section>
+                <form method="POST" action="submit_productivity_data">
+                    <h2>Log Your Productivity for the Day:</h2>
+                    
+                    <label for="task">Task Name:</label><br>
+                    <input type="text" id="task" name="task" required><br><br>
+
+                    <label for="duration">Duration (minutes):</label><br>
+                    <input type="number" id="duration" name="duration" required><br><br>
+
+                    <label for="notes">Notes:</label><br>
+                    <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+
+                    <input type="submit" value="Log Productivity">
+            </section>
+            
+            <footer>
+                <hr>
+                <p>© Life Quest 2026</p>
+            </footer>
+        </main>
+    </body>
