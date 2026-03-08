@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Money Manager</title>
 </head>
@@ -10,7 +10,7 @@
             <a href="index.html">Home</a> |
             <a href="productivity-arena.html">Productivity</a> |
             <a href="money-manager.html">Money</a> |
-            <a href="habits-tracker.html">Habits</a> |
+            <a href="healthy-habits.html">Habits</a> |
             <a href="achievements.html">Achievements</a> |
             <a href="extras.html">Extras</a> |
             <a href="about.html">About</a> |
@@ -26,42 +26,36 @@
             <form>
                 <h4>Enter your Budget and Expenses</h4>
                 <div>
-                    <label for="Monthly Income">Monthly Income:</label><br>
-                    <input type="number" id="MoIn" name="Monthly Income" value="0" min="0" max="9999999999999999999">
+                    <label for="monthly-income">Monthly Income:</label><br>
+                    <input type="number" id="monthly-income" name="monthly-income" value="0" min="0" max="9999999999999999999">
                 </div>
                 <br>
                 <div>
                     <label for="ReMo">Rent/Mortgage:</label><br>
-                    <Input type="number" id="ReMo" name="ReMo" min="0" max="9999999999999999999" value="0">
+                    <input type="number" id="ReMo" name="ReMo" min="0" max="9999999999999999999" value="0">
                 </div>
                 <br>
                 <div>
                     <label for="Food">Food Expense:</label><br>
-                    <Input type="number" id="FoodE" name="FoodE" min="0" max="9999999999999999999" value="0">
+                    <input type="number" id="FoodE" name="FoodE" min="0" max="9999999999999999999" value="0">
                 </div>
                 <br>
                 <div>
                     <label for="Bills">Bills(Water, Elec, subscriptions):</label><br>
-                    <Input type="number" id="Bills" name="Bills" min="0" max="9999999999999999999" value="0">
+                    <input type="number" id="Bills" name="Bills" min="0" max="9999999999999999999" value="0">
                 </div>
                 <br>
-                <button
-                id="MoIn" name="Monthly Income"
-                id="ReMo" name="ReMo"
-                id="FoodE" name="FoodE"
-                id="Bills" name="Bills"
-                >Submit</button>
+                <button type="submit" id="submit" name="submit">Submit</button>
                 <br><br>
             </form>
             <hr>
             <section>
                 <h2>Budget Summary</h2>
-                <P>This bit just covers and summaries you income, expenses and spending fund.</P>
+                <p>This bit just covers and summaries you income, expenses and spending fund.</p>
                 <ol>
-                    
-                    Income:<br>
-                    Expenses:<br>
-                    Funds:
+                    <li>Income:</li>
+                    <li>Expenses:</li>
+                    <li>Funds:</li>
                 </ol>
             </section>
         </section>
