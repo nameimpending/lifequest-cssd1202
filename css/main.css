@@ -24,6 +24,7 @@ body{
     max-width: 860px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
+    
 }
 /*Header*/
 header{
@@ -56,12 +57,16 @@ nav a{
     text-decoration: none;
     font-size: 0.9rem;
 }
+nav.a.active{
+    color:var(--green);
+    text-decoration:underline;
+    font-weight:700;
+}
 nav a:hover{
-    background: var(light);
+    background: var(--light);
     color: var(--green);
 }
-/*pipe char no look good*/
-nav a[href="achievements.html"]{color: var(--green)}
+
 /*main*/
 main section{
     margin-bottom:1.5rem;
