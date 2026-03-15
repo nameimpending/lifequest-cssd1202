@@ -28,6 +28,7 @@ body{
     padding: 2rem 1.5rem;
     
 }
+
 /*Header*/
 header{
     margin-bottom:2rem;
@@ -110,6 +111,10 @@ ul li {
 }
 ul br{display:none;}/*not required do to 'gap'*/
 form{margin-top:1rem;}
+
+a {
+    color: var(--green)
+}
 /*con-forming text*/
 form div{
     display:flex;
@@ -138,8 +143,36 @@ footer{
     form input[type="text"]{width:100px;}
 }
 
-a {
-    color: var(--green)
+
+/*form*/
+form{ margin-top:1rem; }
+form div{
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    margin-bottom:0.6rem;
+    flex-wrap:wrap;
+}
+label{
+    font-size:0.9rem;
+    color:var(--gray);
+}
+.form-input{
+    padding:0.4rem 0.6rem;
+    font-family:inherit;
+    font-size:0.95rem;
+    border:1px solid var(--border);
+    border-radius:4px;
+    background:var(--light);
+    outline:none;
+}
+.form-input:focus{
+    border-color:var(--green);
+}
+textarea.form-input{
+    resize:vertical;
+    min-height:100px;
+    width:100%;
 }
 
 .btn-submit{
@@ -166,3 +199,4 @@ a {
 .welcome {
     color:#2e7d4f;
 }
+
