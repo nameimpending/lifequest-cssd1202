@@ -26,29 +26,34 @@
         <h2> Budget Form</h2>
         <section>
             <p>The page is meant to act as a form to organize <strong> Income and Expenses</strong></p>
-            <form>
+            <form id="budget-form">
                 <h4>Enter your Budget and Expenses</h4>
                 <div>
                     <label for="monthly-income">Monthly Income:</label><br>
                     <input type="number" class="form-input" id="monthly-income" name="monthly-income" value="0" min="0" max="9999999999999999999">
+                    <span id="income" class="error-msg"></span>
                 </div>
                 <br>
                 <div>
                     <label for="ReMo">Rent/Mortgage:</label><br>
                     <input type="number" class="form-input" id="ReMo" name="ReMo" min="0" max="9999999999999999999" value="0">
+                    <span id="Rent-Mort" class="error-msg"></span>
                 </div>
                 <br>
                 <div>
                     <label for="Food">Food Expense:</label><br>
                     <input type="number" class="form-input" id="FoodE" name="FoodE" min="0" max="9999999999999999999" value="0">
+                    <span id="food" class="error-msg"></span>
                 </div>
                 <br>
                 <div>
                     <label for="Bills">Bills(Water, Elec, subscriptions):</label><br>
                     <input type="number" class="form-input" id="Bills" name="Bills" min="0" max="9999999999999999999" value="0">
+                    <span id="bills" class="error-msg"></span>
                 </div>
                 <br>
-                <button type="submit" id="submit" name="submit" class="btn-submit">Submit</button>
+                <button type="submit" name="submit" class="btn-submit">Submit</button>
+                <span id="submission" class="success-msg"></span>
                 <br><br>
             </form>
             <hr>
@@ -56,9 +61,9 @@
                 <h2>Budget Summary</h2>
                 <p>This section gives you an overview on your budget information.</p>
                 <ol>
-                    <li>Income:</li>
-                    <li>Expenses:</li>
-                    <li>Funds:</li>
+                    <li>Income:<span id="sum-income"></span></li>
+                    <li>Expenses:<span id="sum-Expense"></span></li>
+                    <li>Funds:<span id="sum-funding"></span></li>
                 </ol>
             </section>
         </section>
@@ -67,5 +72,6 @@
         <p>LifeQuest 2026</p>
     </footer>
     </div>
+    <script src="js/money-manager.js"></script>
 </body>
 </html>

@@ -44,17 +44,21 @@
                 <form id="contact-form" method="POST" action="submit_contact_form">
                     <div>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" class="form-input" required>
+                        <input type="text" id="name" name="name" class="form-input"><!-- required transferred to js -->
+                        <span id="name-error" class="error-msg"></span>
                     </div>
                     <div>
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" class="form-input" required>
+                        <input type="email" id="email" name="email" class="form-input">
+                        <span id="email-error" class="error-msg"></span>
                     </div>
                     <div>
                         <label for="message">Message:</label>
-                        <textarea id="message" name="message" class="form-input" rows="4" required></textarea>
+                        <textarea id="message" name="message" class="form-input" rows="4"></textarea>
+                        <span id="message-error" class="error-msg"></span>
                     </div>
                     <button type="submit" class="btn-submit">Submit</button>
+                    <span id="contact-success" class="success-msg"></span>
                 </form>
             </section>
         </main>
@@ -63,5 +67,6 @@
             <p>&copy; Life Quest 2026</p>
         </footer>
         </div>
+        <script src="js/contact.js"></script>
     </body>
 </html>
