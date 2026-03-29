@@ -141,7 +141,7 @@ pForm.addEventListener('submit',function(event){
     }
     if(!isValid)return;
 
-    ///toooo muuuuuch sheeeeeeet f*******************
+    ///toooo muuuuuch CODING I'MA BE SICK
 // staggered confirmation message
 
     sButton.disabled = true;
