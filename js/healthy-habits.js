@@ -73,6 +73,22 @@ streakItems.forEach(function(item){
     });//remove highlight
 });
 
+/*make thing actually work*/
+
+const GOALS = {water:6,sleep:8,exercise:45}
+
+// streaks from storage
+const streaks={
+    water:parseInt(localStorage.getItem('streak-water'))|| 0,
+    sleep:parseInt(localStorage.getItem('streak-sleep'))|| 0,
+    exercise:parseInt(localStorage.getItem('streak-exercise'))||0
+};
+function renderStreaks(){
+    document.getElementById('swc').textContent=streaks.water;
+    document.getElementById('ssc').textContent=streaks.sleep;
+    document.getElementById('scc').textContent=streaks.exercise;
+}renderStreaks();
+
 
 habitsForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -108,7 +124,25 @@ habitsForm.addEventListener('submit', function(event) {
 
     // case all valid
     if (isValid) {
+        //new
+
+        streaks.water=water>=GOALS.water?streaks.water+1:0;
+        streaks.sleep=sleep>=GOALS.sleep?streaks.sleep+1:0;
+        streaks.exercise=exercise>=GOALS.exercise?streaks.exercise+1:0;
+
+        localStorage.setItem('streak-water',streaks.water);
+        localStorage.setItem('streak-sleep',streaks.sleep);
+        localStorage.setItem('streak-exercise',streaks.exercise);
+
+        renderStreaks();
+
+        //already
         document.getElementById('habits-success').textContent = 'Habits logged successfully!';
         habitsForm.reset();
     }
 });
+
+
+
+
+
