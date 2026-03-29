@@ -18,7 +18,7 @@ messageInput.insertAdjacentElement('afterend', msgCounter);
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const nameRegex = /^[a-zA-Z\s'-]{2,}$/;
 
-nameInput.addEventListener('keyup', function(event) {
+nameInput.addEventListener('keyup', function(event) {//name valid specific
     const val = event.target.value.trim();
     const hint = document.getElementById('name-error');
     if (val === '') { hint.textContent = ''; return; }
@@ -31,7 +31,7 @@ nameInput.addEventListener('keyup', function(event) {
     }
 });
 
-emailInput.addEventListener('keyup', function(event) {
+emailInput.addEventListener('keyup', function(event) {//email valid specific
     const val = event.target.value.trim();
     const hint = document.getElementById('email-error');
     if (val === '') { hint.textContent = ''; return; }
@@ -44,7 +44,7 @@ emailInput.addEventListener('keyup', function(event) {
     }
 });
 
-messageInput.addEventListener('keyup', function(event) {
+messageInput.addEventListener('keyup', function(event) {//message error cause yes
     const val = event.target.value.trim();
     const hint = document.getElementById('message-error');
     const len = event.target.value.length;
