@@ -15,7 +15,7 @@ contactForm.addEventListener('submit', function(event){
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    //le the f*** patterns
+    //le patterns
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const nameRegex = /^[a-zA-Z\s'-]{2,}$/;
 
