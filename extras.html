@@ -37,11 +37,16 @@
             <section>
                 <h2>Profile Settings</h2>
                 <h3>Profile Color Picker</h3>
-                <form>
+                <div class="userinfo" id="userinfo">
+                    <h4>Current Color</h4>
+                    <img src="images/avatar.png" alt="Avatar" height="100">
+                </div>
+
+                <div id="profile-form">
                     <input type="color" id="profile-color" name="profile-color">
                     <label for="profile-color">Select Profile Color</label> <br><br>
-                    <button type="submit" class="btn-submit">Submit Color</button>
-                </form>
+                    <button type="submit" class="btn-submit" onclick="changeColor()">Submit Color</button>
+                </div>
             </section>
             <p> Coming soon: Avatar Selector</p>
         </main>
@@ -50,5 +55,6 @@
             <p>© Life Quest 2026</p>
         </footer>
         </div>
+        <script src="js/extras.js"></script>
     </body>
 </html>
