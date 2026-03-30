@@ -82,9 +82,13 @@ contactForm.addEventListener('submit', function(event){
     document.getElementById('contact-success').textContent = '';
 
     //obtain val
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
-    const message = messageInput.value.trim();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    //regex patterns
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const nameRegex = /^[a-zA-Z\s'-]{2,}$/;
 
     //val
     let isValid = true;
